@@ -1,0 +1,50 @@
+.root {
+  padding: 6rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  padding: 0.5rem 0px 0.5px;
+  margin: 0px;
+}
+.h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 8px;
+}
+.p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.25rem;
+}
+.socials {
+  padding: 2rem 0rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+.socials img {
+  height: 2.5rem;
+}
+.social-svg {
+  height: 3rem;
+  fill: #dc3232;
+}
+.line {
+  margin: 0rem 0rem 1rem;
+}
+.path-line {
+  stroke-width: 3;
+}
+.intro-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

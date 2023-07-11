@@ -1,0 +1,53 @@
+.root {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: block;
+  align-self: start;
+  flex-direction: column;
+  align-items: start;
+  justify-items: start;
+  align-content: start;
+  justify-content: start;
+}
+.h2 {
+}
+.p {
+  padding: 0.5rem 0rem;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: none;
+}
+.span {
+  font-weight: 600;
+  color: #ff3a7a;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem 0rem 0rem;
+}
+.grid-item {
+  font-size: 1rem;
+  text-align: center;
+  perspective: 2000;
+}
+.grid-img {
+  width: 100%;
+  border-radius: 1rem;
+  pointer-events: none;
+}
+.h4 {
+  font-weight: 500;
+}
+.visit-portofolio {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+}
