@@ -84,7 +84,7 @@ export const ContactForm = ({ className }: ContactFormProps) => {
                         <textarea
                             name="message"
                             required
-                            className={classNames('form-control', styles.input)}
+                            className={classNames('form-control', styles.input, styles.input)}
                             value={query.message}
                             onChange={handleParam()}
                         />

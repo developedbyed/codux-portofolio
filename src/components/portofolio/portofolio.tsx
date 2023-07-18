@@ -11,25 +11,6 @@ export interface PortofolioProps {
 }
 
 export const Portofolio = ({ className }: PortofolioProps) => {
-    const x1 = useMotionValue(0);
-    const y1 = useMotionValue(0);
-    const rotateX1 = useTransform(y1, [-100, 100], [30, -30]);
-    const rotateY1 = useTransform(x1, [-100, 100], [-30, 30]);
-
-    const x2 = useMotionValue(0);
-    const y2 = useMotionValue(0);
-    const rotateX2 = useTransform(y2, [-100, 100], [30, -30]);
-    const rotateY2 = useTransform(x2, [-100, 100], [-30, 30]);
-
-    const x3 = useMotionValue(0);
-    const y3 = useMotionValue(0);
-    const rotateX3 = useTransform(y3, [-100, 100], [30, -30]);
-    const rotateY3 = useTransform(x3, [-100, 100], [-30, 30]);
-
-    const x4 = useMotionValue(0);
-    const y4 = useMotionValue(0);
-    const rotateX4 = useTransform(y3, [-100, 100], [30, -30]);
-    const rotateY4 = useTransform(x3, [-100, 100], [-30, 30]);
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['portofolio-wrapper']}>
@@ -75,13 +56,7 @@ export const Portofolio = ({ className }: PortofolioProps) => {
             </p>
             <p className={styles.p}></p>
             <div className={styles.grid}>
-                <motion.div
-                    style={{ x: x1, y: y1, rotateX: rotateX1, rotateY: rotateY1 }}
-                    drag
-                    dragElastic={0.1}
-                    dragConstraints={{ top: 0, left: 0, bottom: 0, right: 0 }}
-                    className={styles['grid-item']}
-                >
+                <motion.div className={styles['grid-item']}>
                     <img src={website_1} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>Buzz - Full Stack Next 13</h4>
@@ -89,39 +64,21 @@ export const Portofolio = ({ className }: PortofolioProps) => {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    style={{ x: x2, y: y2, rotateX: rotateX2, rotateY: rotateY2 }}
-                    drag
-                    dragElastic={0.1}
-                    dragConstraints={{ top: 0, left: 0, bottom: 0, right: 0 }}
-                    className={styles['grid-item']}
-                >
+                <motion.div className={styles['grid-item']}>
                     <img src={website_2} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>E-commerce with Stripe</h4>
                         <a href="https://next-ecommerce-puce-five.vercel.app/">Visit </a>
                     </div>
                 </motion.div>
-                <motion.div
-                    style={{ x: x3, y: y3, rotateX: rotateX3, rotateY: rotateY3 }}
-                    drag
-                    dragElastic={0.1}
-                    dragConstraints={{ top: 0, left: 0, bottom: 0, right: 0 }}
-                    className={styles['grid-item']}
-                >
+                <motion.div className={styles['grid-item']}>
                     <img src={website_3} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>3d Animations with Blender</h4>
                         <a href="https://3d-scroll-ball.vercel.app/">Visit </a>
                     </div>
                 </motion.div>
-                <motion.div
-                    style={{ x: x4, y: y4, rotateX: rotateX4, rotateY: rotateY4 }}
-                    drag
-                    dragElastic={0.1}
-                    dragConstraints={{ top: 0, left: 0, bottom: 0, right: 0 }}
-                    className={styles['grid-item']}
-                >
+                <motion.div className={styles['grid-item']}>
                     <img src={website_4} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>Hua Portofolio</h4>
