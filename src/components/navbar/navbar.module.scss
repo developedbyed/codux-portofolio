@@ -1,4 +1,15 @@
 .root {
+}
+
+.logo {
+  font-size: 1em;
+}
+.links {
+  list-style-type: none;
+  display: flex;
+  gap: 3em;
+}
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,11 +20,10 @@
   top: 0px;
   z-index: 50;
 }
-.logo {
-  font-size: 1em;
-}
-.links {
-  list-style-type: none;
-  display: flex;
-  gap: 3em;
+
+@media screen and (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

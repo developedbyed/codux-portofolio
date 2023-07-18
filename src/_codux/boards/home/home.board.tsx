@@ -3,5 +3,9 @@ import { Home } from '../../../components/home/home';
 
 export default createBoard({
     name: 'Home',
-    Board: () => <Home />
+    Board: () => <Home />,
+    environmentProps: {
+        windowWidth: 1368,
+        windowHeight: 1107,
+    },
 });

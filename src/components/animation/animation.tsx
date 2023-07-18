@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import styles from './animation.module.scss';
 import Lottie from 'lottie-react';
 import hand from '../../assets/animation.json';
+import { motion } from 'framer-motion';
 
 export interface AnimationProps {
     className?: string;
@@ -13,8 +14,13 @@ export interface AnimationProps {
  */
 export const Animation = ({ className }: AnimationProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className={classNames(styles.root, className)}
+        >
             <Lottie animationData={hand} className={styles.hand} />
-        </div>
+        </motion.div>
     );
 };

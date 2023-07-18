@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 import styles from './home.module.scss';
+import { Intro } from '../intro/intro';
+import { Portofolio } from '../portofolio/portofolio';
 
 export interface HomeProps {
     className?: string;
@@ -10,5 +12,10 @@ export interface HomeProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Home = ({ className }: HomeProps) => {
-    return <div className={classNames(styles.root, className)}></div>;
+    return (
+        <div className={classNames(styles.root, className)}>
+            <Intro />
+            <Portofolio />
+        </div>
+    );
 };

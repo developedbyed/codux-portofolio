@@ -28,7 +28,30 @@ export const Portofolio = ({ className }: PortofolioProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <h3>My Portfolio</h3>
-            {/* Rest of the content */}
+            <p className={styles.p}>
+                I am a web developer with a passion for creating beautiful and functional websites.
+                I have a strong understanding of HTML, CSS, JavaScript, and PHP, and I am proficient
+                in a variety of back-end frameworks. I am also a creative thinker and I am always
+                looking for new ways to solve problems.
+            </p>
+            <p className={styles.p}>
+                In my portfolio, you will find a selection of my recent projects. These projects
+                showcase my skills in a variety of areas, including:
+            </p>
+            <ul className={styles.list}>
+                <li>
+                    <span className={styles.span}>Web design</span> I have a keen eye for design and
+                    I am able to create websites that are both visually appealing and user-friendly.
+                </li>
+                <li>
+                    <span className={styles.span}>Web development</span> I am an experienced web
+                    developer and I am able to build websites that are both efficient and scalable.
+                </li>
+                <li>
+                    <span className={styles.span}>Problem-solving</span> I am a creative thinker and
+                    I am able to find innovative solutions to problems.
+                </li>
+            </ul>
             <div className={styles.grid}>
                 <motion.div
                     style={{ x: x1, y: y1, rotateX: rotateX1, rotateY: rotateY1 }}
@@ -40,7 +63,7 @@ export const Portofolio = ({ className }: PortofolioProps) => {
                     <img src={website_1} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>Buzz - Full Stack Next 13</h4>
-                        <a href="https://vercel.com/dashboard">Visit </a>
+                        <a href="https://buzz-next-nine.vercel.app/">Visit </a>
                     </div>
                 </motion.div>
 
@@ -54,7 +77,7 @@ export const Portofolio = ({ className }: PortofolioProps) => {
                     <img src={website_2} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>E-commerce with Stripe</h4>
-                        <a href="https://vercel.com/dashboard">Visit </a>
+                        <a href="https://next-ecommerce-puce-five.vercel.app/">Visit </a>
                     </div>
                 </motion.div>
                 <motion.div
@@ -67,7 +90,7 @@ export const Portofolio = ({ className }: PortofolioProps) => {
                     <img src={website_3} className={styles['grid-img']} />
                     <div className={styles['visit-portofolio']}>
                         <h4 className={styles.h4}>3d Animations with Blender</h4>
-                        <a href="https://vercel.com/dashboard">Visit </a>
+                        <a href="https://3d-scroll-ball.vercel.app/">Visit </a>
                     </div>
                 </motion.div>
             </div>
