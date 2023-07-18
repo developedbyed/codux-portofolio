@@ -7,6 +7,7 @@
   align-content: center;
   justify-content: center;
 }
+
 .title {
   font-weight: 700;
   font-size: 3rem;
@@ -17,28 +18,15 @@
 .h3 {
   font-weight: 500;
   font-size: 1.5rem;
-  padding: 8px;
 }
 .p {
   font-size: 1rem;
   text-align: center;
   padding: 0.25rem;
 }
-.socials {
-  padding: 2rem 0rem;
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-}
-.socials img {
-  height: 2.5rem;
-}
-.social-svg {
-  height: 3rem;
-  fill: #dc3232;
-}
+
 .line {
-  margin: 0rem 0rem 1rem;
+  margin: 1rem;
 }
 .path-line {
   stroke-width: 3;
@@ -47,4 +35,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cta {
+  margin: 1rem 0rem;
+  font-size: 0.8rem;
+  color: white;
 }

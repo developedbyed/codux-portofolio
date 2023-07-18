@@ -32,7 +32,7 @@ export const ContactForm = ({ className }: ContactFormProps) => {
     };
 
     // Form Submit function
-    const formSubmit = (e) => {
+    const formSubmit = (e: any) => {
         e.preventDefault();
         const formData = new FormData();
         Object.entries(query).forEach(([key, value]) => {

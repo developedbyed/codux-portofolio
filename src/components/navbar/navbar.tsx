@@ -13,10 +13,12 @@ export interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     return (
         <div className={classNames(styles.root, className, styles.nav)}>
-            <h1 className={styles.logo}>Dimitri Marco</h1>
+            <Link to={'/'}>
+                <h1 className={styles.logo}>Dimitri Marco</h1>
+            </Link>
             <ul className={styles.links}>
                 <li>
-                    <Link to={'/'}>Portofolio</Link>
+                    <Link to={'/'}>Portfolio</Link>
                 </li>
                 <li>
                     <Link to={'/contact'}>Contact</Link>

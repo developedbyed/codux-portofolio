@@ -5,7 +5,8 @@ export default createBoard({
     name: 'Portofolio',
     Board: () => <Portofolio />,
     environmentProps: {
-        windowWidth: 580,
+        windowWidth: 1520,
         windowHeight: 1053,
+        canvasWidth: 1660,
     },
 });
